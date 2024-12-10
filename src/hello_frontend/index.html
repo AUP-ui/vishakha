@@ -1,17 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>IC Hello Starter</title>
-  <base href="/" />
-  <link rel="icon" href="/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .movie-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        .movie {
+            background-color: white;
+            border-radius: 8px;
+            margin: 15px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .movie:hover {
+            transform: scale(1.05);
+        }
+        .movie img {
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .movie-info {
+            padding: 15px;
+        }
+        .movie-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .movie-description {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
 </head>
-
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
-</body>
 
+<header>
+    <h1>Movie Collection</h1>
+</header>
+
+<div class="movie-container">
+    <div class="movie">
+        <img src="https://via.placeholder.com/250x375" alt="Movie Poster">
+        <div class="movie-info">
+            <div class="movie-title">Inception</div>
+            <p class="movie-description">A skilled thief is given a chance to have his criminal record erased if he can successfully perform inception on a target's subconscious mind.</p>
+        </div>
+    </div>
+
+    <div class="movie">
+        <img src="https://via.placeholder.com/250x375" alt="Movie Poster">
+        <div class="movie-info">
+            <div class="movie-title">The Dark Knight</div>
+            <p class="movie-description">Batman faces a new nemesis, the Joker, whose plans threaten to bring Gotham City to its knees.</p>
+        </div>
+    </div>
+
+    <div class="movie">
+        <img src="https://via.placeholder.com/250x375" alt="Movie Poster">
+        <div class="movie-info">
+            <div class="movie-title">The Matrix</div>
+            <p class="movie-description">A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.</p>
+        </div>
+    </div>
+
+    <div class="movie">
+        <img src="https://via.placeholder.com/250x375" alt="Movie Poster">
+        <div class="movie-info">
+            <div class="movie-title">Interstellar</div>
+            <p class="movie-description">A team of explorers must travel beyond our galaxy to find a new habitable planet for humanity.</p>
+        </div>
+    </div>
+</div>
+
+</body>
 </html>
